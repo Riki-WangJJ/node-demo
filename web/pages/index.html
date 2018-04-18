@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/index.css">
   <title>首页</title>
 </head>
 <body>
   这是一个神奇的网站
   <img src="../static/images/11.jpg">
   <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
+    <% list.forEach(function(item) { %>
+      <li><%= item %></li>
+    <% }) %>
   </ul>
   <script src="../static/lib/jquery.min.js"></script>
-  <script>
-    $('li').css('background', 'red')
-  </script>
+  <script src="../static/js/index.js" ></script>
 </body>
 </html>
